@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+   
+ <html lang="es">
+ 
+ <head>
+    <title> Viajes Divertimento - Contacto </title>                                             
+    <meta charset="UTF-8"/>
+    <meta name="autor" content="José Luis Peñuela Berenguer" />
+    <meta name="robots" content="nofollo, noimageindex" />
+    <meta name="keywords" content="daw, css" />                                 
+    <meta name="description" content=" Proyecto asignatura lenguaje de marcas"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href ="../css/reservar.css"/>
+    <link rel="icon" href="../imagenes/favi.png"/>
+    <script src="../javascript/objeto.js"/></script>
+    <script src="../javascript/modal.js"/></script>
+    <script src="../javascript/general.js"/></script>
+    <script src="../javascript/reservar.js"/></script>
+    
+ </head>
+ 
+ <body>
+ <div id="wrapper">
+ 
+        <!-- Cabecera -->
+        
+    <header id="cabecera">
+        <h1 class="textcabecentro"> VIAJES DIVERTIMENTO</h1>
+        <img class="logoi" src="../imagenes/monumentos.png" alt="monumentos"/>
+        <img class="logod" src="../imagenes/mapa.png" alt="mapa"/>
+    </header>
+    
+        <!-- Botones -->
+    
+    <div id="botonera">
+        <nav>
+            <ul class="panelBotones">
+            <span class="botones"><a href="../inicio.html"> Inicio </a></span>
+            <span id ="botonact" ><a href="destinos.html"> Destinos</a> 
+                <ul id ="botonHide" class="botones">
+                    <li class ="opcionesHide"><a href="europa.html"> Europa</a></li>
+                    <li class ="opcionesHide"><a href="asia.html"> Asia</a></li>
+                </ul>
+			</span>
+            <span class="botones"><a href="multimedia.html"> Multimedia</a></span>
+            <span class="botones"><a href="opinion.html"> Opinion</a></span>
+            <span class="botones"><a href="contacto.html"> Contacto</a></span>
+            <span class="botones"><a href="alta.html"> Alta </a></span>
+            <span class="tabActual"><a href="reservar.html"> Reservas </a></span>
+            </ul>
+        </nav>
+    </div>
+
+    
+        <!-- columna izquierda -->
+        
+    <div id="coli">
+    </div>
+        
+        <!-- Columna central -->
+        
+    <section id="colc">
+        <h1 class="texto"> RESERVA</h1>
+        <p> A continuación puedes hacer la reserva de tus vacaciones</p>
+            <div>
+                <ul>
+                    <li>
+                <label for="destinos">Selecciona un destino </label>
+                        <select id="destinos" name="destinos">
+                        </select> <br/><br/>
+                    </li>
+                    <li>
+                <label for="ida"> Indica la fecha de ida </label>
+                    <input type="date" id="ida" name="ida" />
+                    </li>
+                    <li>
+                <label for="vuelta"> Indica la fecha de vuelta </label>
+                    <input type="date" id="vuelta" name="vuelta" />
+                    </li>
+                </ul>
+                <br />
+            <div id="alinear">
+                <label for="crear"> </label>
+                <input type="button" id="crear" value="Crear reserva" />
+                <label for="modificar"> </label>
+                <input type="button" id="modificar" value="Modificar reserva" />
+                <label for="eliminar"> </label>
+                <input type="button" id="eliminar" value="Eliminar reserva" />
+            </div>
+            </div>
+                <br />
+            <div id="modal">
+                <span id="spanVentana"> Su reserva ha sido creada</span>
+                <button id="botonVentana">Aceptar</button>
+            </div>
+            <div>
+                <p> Estas son las reservas creadas hasta el momento </p>
+            </div>
+            <div id="objetos">
+            </div>
+    </section>
+        
+        <!-- Columna derecha -->
+        
+    <div id="cold">
+        <img class="brujula" src="../imagenes/brujula.png" alt="brujula"/>
+    </div>
+        
+        <!-- Pie -->
+        
+    <footer id="pie">
+        <p id ="hora"></p>
+        <p class="legal"> <small>® 2010-2019, Viajes Divertimento S.L. Todos los derechos reservados</small></p>
+    </footer>
+    
+</div>
+</body> 
+</html>

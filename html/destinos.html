@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+   
+ <html lang="es">
+ 
+ <head>
+    <title> Viajes Divertimento - Inicio </title>                                             
+    <meta charset="UTF-8"/>
+    <meta name="autor" content="José Luis Peñuela Berenguer" />
+    <meta name="robots" content="nofollo, noimageindex" />
+    <meta name="keywords" content="daw, css, viajes, Europa, Asia" />
+    <meta name="description" content=" Proyecto asignatura lenguaje de marcas"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href="../css/destinos.css"/>
+    <link rel="icon" href="../imagenes/favi.png"/>
+    <script src="../javascript/general.js"/></script>
+    <script src="../javascript/banner.js"/></script>
+    <script src="../javascript/destinos.js"></script>
+ </head>
+ 
+ <body>
+ <div id="wrapper">
+    
+    <!-- cabecera -->
+    
+    <header id="cabecera">
+        <h1 class="textcabecentro"> VIAJES DIVERTIMENTO</h1>
+        <img class="logoi" src="../imagenes/monumentos.png" alt="monumentos"/>
+        <img class="logod" src="../imagenes/mapa.png" alt="mapa"/>
+    </header>
+    <!-- botones -->
+    <div id="botonera">
+        <nav>
+            <ul class="panelBotones">
+            <span class="botones"><a href="../inicio.html"> Inicio </a></span>
+            <span id ="botonact" class="tabActual"> Destinos 
+                <ul id ="botonHide">
+                    <li class ="opcionesHide"><a href="europa.html"> Europa</a></li>
+                    <li class ="opcionesHide"><a href="asia.html"> Asia</a></li>
+                </ul>
+			</span>
+            <span class="botones"><a href="multimedia.html"> Multimedia</a></span>
+            <span class="botones"><a href="opinion.html"> Opinion</a></span>
+            <span class="botones"><a href="contacto.html"> Contacto</a></span>
+            <span class="botones"><a href="alta.html"> Alta </a></span>
+            <span class="botones"><a href="reservar.html"> Reservas </a></span>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- columna izquierda -->
+    
+    <div id="coli">
+    </div>
+    
+    <!-- columna central -->
+    
+    <section id ="colc">
+        <div>
+            <h1 class="texto"><strong>SELECCIONA TU PRÓXIMO DESTINO</strong> </h1>
+        </div>
+        
+        <article>
+            <header class="tiras">
+                <h2>Destinos</h2>
+            </header>
+                <p>Este banner contiene una pequeña muestra de imagenes sobre los destinos a los que podrás viajar</p>
+<!-- Banner -->
+            <div id="banner">
+                <h6>Roma</h6>
+            </div>
+            <p>Pulsa en el botón del continente deseado para ser redirigido a los destinos disponibles</p>
+            <footer>
+                <div id="botonesDestino">
+                    <a class="botonesLink" href="../html/europa.html">Europa</a>
+                    <a class="botonesLink" href="../html/asia.html">Asia</a>
+                </div>
+            </footer>
+        </article>
+    </section>
+        
+        <!-- columna derecha -->
+        
+    <div id="cold">
+        <img class="brujula" src="../imagenes/brujula.png" alt="brujula"/>
+    </div>
+    
+        <!-- pie -->
+        
+    <footer id="pie">
+        <p id ="hora"></p>
+        <p class="legal"> <small>® 2010-2019, Viajes Divertimento S.L. Todos los derechos reservados</small></p>
+    </footer>
+    
+</div>
+</body>
+ 
+</html>

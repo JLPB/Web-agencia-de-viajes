@@ -1,0 +1,100 @@
+
+#wrapper{
+    padding: 10px;
+}
+
+/* Key-frames varios navegadores */
+@-moz-keyframes titulos{
+    from {color:black;}
+    to{color: white;}
+}
+@-webkit-keyframes titulos{
+    from {color:black;}
+    to{color: white;}
+}
+@-ms-keyframes titulos{
+    from {color:black;}
+    to{color: white;}
+}
+@keyframes titulos{
+    from {color:black;}
+    to{color: white;}
+}
+
+/* Formato */
+
+#cabecera{
+    padding: 5px 5px 0px 5px;
+    height:100px;
+    text-align:center;
+}
+
+#coli{   
+    float: left;
+    height:1400px;
+    width:10%;
+}
+
+#colc{
+    background-color: #b3ecff;
+    float:left;);
+    float:left;
+    height:1400px;
+    width:80%;
+}
+
+#cold{
+    float: right;
+    height:1400px;
+    width:10%;   
+}
+
+#pie {
+    height:75px;;
+    clear:both
+}
+/* id */
+
+/* clases */
+
+.tiras{
+    background-image: URL('../imagenes/tira.jpg');
+    padding-top: 5px;
+    border-style: solid;
+    border-color:black;
+    color:black;
+    height:35px;
+}
+
+.lista{
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.ultimo p:nth-child(6){
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* Elementos */
+
+.animacion{
+    color:black;
+    -moz-animation: titulos 5s infinite alternate;
+    -webkit-animation: titulos 5s infinite alternate;
+    -ms-animation: titulos 5s infinite alternate;
+    animation: titulos 5s infinite alternate;
+}
+
+h3{
+    text-align:center;
+}
+
+p[name="filosofia"]{
+    text-align:center;
+    font-size: 22px;
+    font-style:italic;
+    font-weight:bold;
+    color:#8c1aff;
+    
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+   
+ <html lang="es">
+ 
+ <head>
+    <title> Viajes Divertimento - Multimedia </title>                                              
+    <meta charset="UTF-8"/>
+    <meta name="autor" content="José Luis Peñuela Berenguer" />
+    <meta name="robots" content="nofollo, noimageindex" />
+    <meta name="keywords" content="daw, css, viaje, Roma, Carcassone, Edimburgo, Angkor Wat, Taj Mahal, Tokio" />
+    <meta name="description" content=" Proyecto asignatura lenguaje de marcas"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href ="../css/multimedia.css"/>
+    <link rel="icon" href="../imagenes/favi.png"/>
+    <script src="../javascript/select.js"/></script>
+    <script src="../javascript/general.js"/></script>
+    <script src="../javascript/multimedia.js"/></script>
+    
+ </head>
+ 
+ <body>
+ <div id="wrapper">
+ 
+        <!-- Cabecera -->
+        
+    <header id="cabecera">
+        <h1 class="textcabecentro"> VIAJES DIVERTIMENTO</h1>
+        <img class="logoi" src="../imagenes/monumentos.png" alt="monumentos"/>
+        <img class="logod" src="../imagenes/mapa.png" alt="mapa"/>
+    </header>
+    
+        <!-- Botones -->
+    
+    <div id="botonera">
+        <nav>
+            <ul class="panelBotones">
+            <span class="botones"><a href="../inicio.html"> Inicio </a></span>
+            <span id ="botonact" class="botones" > Destinos 
+                <ul id ="botonHide">
+                    <li class ="opcionesHide"><a href="europa.html"> Europa</a></li>
+                    <li class ="opcionesHide"><a href="asia.html"> Asia</a></li>
+                </ul>
+			</span>
+            <span class="tabActual"><a href="multimedia.html"> Multimedia</a></span>
+            <span class="botones"><a href="opinion.html"> Opinion</a></span>
+            <span class="botones"><a href="contacto.html"> Contacto</a></span>
+            <span class="botones"><a href="alta.html"> Alta </a></span>
+            <span class="botones"><a href="reservar.html"> Reservas </a></span>
+            </ul>
+        </nav>
+    </div>
+    
+        <!-- columna izquierda -->
+    
+    <div id="coli">
+    </div>
+        
+        <!-- Columna central -->
+        
+    <section id="colc">
+        <h1 class="texto"><strong>ESTO ENCONTRARÁS EN TU PRÓXIMO VIAJE</strong></h1>
+        <p> A continuación encontrarás videos y audios para que conozcas algunos de los lugares que se detallan en nuestro apartado <a href="destinos.html"><em><mark>destinos</mark></em></a>.</p>
+    
+        <h2 class="textoCabVideo"> Videos </h2>
+            <P> El primer vídeo de esta sección corresponde a la ciudad de Roma y el segundo es una vista panorámica de la ciudad de Tokio</p>
+            <div class="formato">
+                <video width="640" height="360" controls>
+                    <source src="../videos/Roma.mp4" />
+                    <source src="../videos/Roma.flv" />
+                </video>
+            </div>
+            
+            <div class="formato">
+                <video width="640" height="360" controls>
+                    <source src="../videos/Tokio.mp4" />
+                    <source src="../videos/Tokio.flv" />
+                </video>
+            </div>
+            
+        <h2 class="textoCabAudio"> Audios </h2>
+            <p>El siguiente audio habla sobre el coliseo romano, su funcionamiento y curiosidades</p>
+            <div class="formato">
+                <audio controls>
+                    <source src="../audio/Coliseo.mp3" />
+                    <source src="../audio/Coliseo.ogg" />
+                </audio>
+            </div>
+            
+            <p> Este audio habla de la historia detrás de la construcción del Taj Mahal (En inglés)</p>
+            <div class="formato">
+                <audio controls>
+                    <source src="../audio/taj.mp3" />
+                    <source src="../audio/taj.ogg" />
+                </audio>
+            </div>
+            
+            <p> Pon el cursor sobre el mapa del mundo para comprobar como sería el mundo visto del revés</p>
+                <div>
+                    <figure class="centrar">
+                        <img src="../imagenes/continentes.png" alt="Mapa del mundo"/>
+                    </figure>
+                </div>
+            <div>
+                <p> Elige un continente y un país para ver una imagen del mismo </p>
+            </div>
+            <div id="selects">
+                <select id="conti" name="conti">
+                                <option value="vacio"> </option>
+                                <option value="Europa"> Europa</option>
+                                <option value="Asia"> Asia</option>
+                </select>
+                <select id="pays" name="pays">
+                                <option value="España"></option>
+                                <option value="Irlanda"></option>
+                                <option value="Portugal"></option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <img id="ima" src="" alt="" />
+            </div>
+
+    </section>
+        
+        <!-- Columna derecha -->
+        
+    <div id="cold">
+        <img class="brujula" src="../imagenes/brujula.png" alt="brujula"/>
+    </div>
+        
+        <!-- Pie -->
+        
+    <footer id="pie">
+        <p id ="hora"></p>
+        <p class="legal"> <small>® 2010-2019, Viajes Divertimento S.L. Todos los derechos reservados</small></p>
+    </footer>
+    
+</div>
+</body>
+ </html>

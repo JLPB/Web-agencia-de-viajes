@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+   
+ <html lang="es">
+ 
+ <head>
+    <title> Viajes Divertimento - Contacto </title>                                             
+    <meta charset="UTF-8"/>
+    <meta name="autor" content="José Luis Peñuela Berenguer" />
+    <meta name="robots" content="nofollo, noimageindex" />
+    <meta name="keywords" content="daw, css" />                                 
+    <meta name="description" content=" Proyecto asignatura lenguaje de marcas"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href ="../css/contacto.css"/>
+    <link rel="icon" href="../imagenes/favi.png"/>
+    <script src="../javascript/general.js"/></script>
+    <script src="../javascript/basico.js"/></script>
+ </head>
+ 
+ <body>
+ <div id="wrapper">
+ 
+        <!-- Cabecera -->
+        
+    <header id="cabecera">
+        <h1 class="textcabecentro"> VIAJES DIVERTIMENTO</h1>
+        <img class="logoi" src="../imagenes/monumentos.png" alt="monumentos"/>
+        <img class="logod" src="../imagenes/mapa.png" alt="mapa"/>
+    </header>
+    
+        <!-- Botones -->
+    
+    <div id="botonera">
+        <nav>
+            <ul class="panelBotones">
+            <span class="botones"><a href="../inicio.html"> Inicio </a></span>
+            <span id ="botonact" class="botones"><a href="destinos.html"> Destinos</a> 
+                <ul id ="botonHide">
+                    <li class ="opcionesHide"><a href="europa.html"> Europa</a></li>
+                    <li class ="opcionesHide"><a href="asia.html"> Asia</a></li>
+                </ul>
+			</span>
+            <span class="botones"><a href="multimedia.html"> Multimedia</a></span>
+            <span class="botones"><a href="opinion.html"> Opinion</a></span>
+            <span class="tabActual"><a href="contacto.html"> Contacto</a></span>
+            <span class="botones"><a href="alta.html"> Alta </a></span>
+            <span class="botones"><a href="reservar.html"> Reservas </a></span>
+            </ul>
+        </nav>
+    </div>
+    
+        <!-- columna izquierda -->
+        
+    <div id="coli">
+    </div>
+        
+        <!-- Columna central -->
+        
+    <section id="colc">
+        <h1 class="texto"> PERMÍTENOS SERTE DE AYUDA</h1>
+        <p> Puedes contactar con nosotros a través de nuestro correo electrónico <a href="mailto:info@viajesdivertimento.com"><img src="../imagenes/email.png" alt="email"/></a></p>
+        <p> Si prefieres desplazarte hasta nuestras oficinas nos encontramos en:</p>
+        <p> C/ falset nº 288 planta 28 - Callosa d'En Sarrià 03510 </p>
+            <ul>
+                <li> Mañanas: De 09:00 a 14:00 </li>
+                <li> Tardes: De 15:00 a 20:00</li>
+            </ul>
+        <p> También puedes contactarnos telefónicamente, nuestro teléfono es 666.777.888 </p>
+        <p>En el caso de que tengas un blog de viajes y quieras compartirlo o que lo usemos como referido, por favor rellena los siguientes campos. Los campos envueltos en puntos y cuyos nombres están en negrita y cursiva son obligatorios</p> 
+        <form id="formcon" method="post" action="http://www.formular-chef.com/Formular-Chef.cgi" >
+        <input type="hidden" name="recipient" value="jpenuelaberenguer@gmail.com" />
+            <div>
+            <ul>
+                <li>
+                    <label class="obligatorio" for="teno">Nombre: </label>
+                    <input type="text" id="teno" name="nombre" size="50" maxlength="50" required autofocus autocomplete="off"/>
+                </li>
+                <li>
+                    <label class="obligatorio" for="dircor"> E-mail: </label>
+                    <input type="email" id="dircor" name="direccion electronica" size="50" maxlength="75" required autocomplete="off"/>
+                </li>
+                <li>
+                    <label for="telefono"> Teléfono de contacto </label>
+                    <input type="tel" id="telefono" name="telefono" size="11" maxlength="11" placeholder="123.456.789" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}"/>
+                </li>
+                <li>
+                    <label class="obligatorio" for="url"> Introduce la URL que quieres compartir </label>
+                    <input type="url" id="url" name="url" size="50" placeholder="http://wwww.ejemplo.com" required/>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <div id="centbotones">
+                <label for="vaciar"> </label>
+                <input type="reset" id="vaciar" value="Vaciar" />
+                <label for="env"> </label>
+                <input type="submit" id="env" value="Enviar" />
+            </div>
+            </div>
+        </form>
+        <p class="agradecer"><strong>¡Gracias por confiar en Viajes Divertimento!</strong></p>
+    </section>
+        
+        <!-- Columna derecha -->
+        
+    <div id="cold">
+        <img class="brujula" src="../imagenes/brujula.png" alt="brujula"/>
+    </div>
+        
+        <!-- Pie -->
+        
+    <footer id="pie">
+        <p id ="hora"></p>
+        <p class="legal"> <small>® 2010-2019, Viajes Divertimento S.L. Todos los derechos reservados</small></p>
+    </footer>
+    
+</div>
+</body> 
+</html>

@@ -1,0 +1,67 @@
+
+#wrapper{
+    padding: 10px;
+}
+
+/* inicio columnas */
+
+#cabecera{
+    padding: 5px 5px 0px 5px;
+    height: 100px;
+}
+
+#coli{   
+    float: left;
+    height: 1300px;
+    width:10%;
+}
+
+#colc{
+    background-color: #b3ecff;
+    float:left;
+    height: 1300px;
+    width:80%; 
+}
+
+#cold{
+    float: right;
+    height: 1300px;
+    width:10%;
+}
+
+#pie {
+    height: 75px;
+    clear:both
+}
+
+/* Id */
+
+#cuadrosup{
+    padding:10px 10px 0px 10px;
+}
+
+
+#subir{
+    padding-top: 10px;
+    margin-left: 20px; 
+}
+
+/* clases */
+
+
+.subir{
+    padding-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;    
+}
+
+/* Elementos */
+
+input{
+    font-size: 14px;
+    text-align:justify;
+}
+
+output{
+    margin-left: 73px;
+}

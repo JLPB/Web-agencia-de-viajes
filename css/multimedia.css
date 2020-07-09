@@ -1,0 +1,100 @@
+
+#wrapper{
+    padding: 10px;
+}
+
+/* Formato */
+
+#cabecera{
+    padding: 5px 5px 0px 5px;
+    height: 100px;
+}
+
+#coli{   
+    float: left;
+    height: 2250px;
+    width:10%;
+     
+}
+
+#colc{
+    background-color: #b3ecff;
+    float:left;
+    height: 2250px;
+    width:80%;
+}
+
+#cold{ 
+    float: right;
+    height: 2250px;
+    width:10%;
+    
+}
+
+#pie {
+    height: 75px;
+    clear:both
+}
+
+#selects{
+    text-align: center;
+}
+
+#ima{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+/* Id */
+
+/* clases */
+
+.textoCabVideo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:bijou;
+    font-size: 50px;
+    color:#009933;
+    text-align: center;
+}
+
+.textoCabAudio{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:oasis;
+    font-size: 50px;
+    color:#009933;
+    text-align: center;
+}
+
+.formato{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.centrar{
+    text-align:center;
+    -moz-transition:all 1s ease-out;
+    -webkit-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-out;
+}
+
+.centrar:hover{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+/* Elementos */
+
+h2{
+    font-size:40px;
+}
+
+video{
+    border-width:5px;
+    border-style: solid;
+}

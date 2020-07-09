@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+   
+ <html lang="es">
+ 
+ <head>
+    <title> Viajes Divertimento - Contacto </title>                                             
+    <meta charset="UTF-8"/>
+    <meta name="autor" content="José Luis Peñuela Berenguer" />
+    <meta name="robots" content="nofollo, noimageindex" />
+    <meta name="keywords" content="daw, css" />                                 
+    <meta name="description" content=" Proyecto asignatura lenguaje de marcas"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href ="../css/alta.css"/>
+    <link rel="icon" href="../imagenes/favi.png"/>
+    <script src="../javascript/form.js"/></script>
+    <script src="../javascript/general.js"/></script>
+    <script src="../javascript/alta.js"/></script>
+    
+ </head>
+ 
+ <body>
+ <div id="wrapper">
+ 
+        <!-- Cabecera -->
+        
+    <header id="cabecera">
+        <h1 class="textcabecentro"> VIAJES DIVERTIMENTO</h1>
+        <img class="logoi" src="../imagenes/monumentos.png" alt="monumentos"/>
+        <img class="logod" src="../imagenes/mapa.png" alt="mapa"/>
+    </header>
+    
+        <!-- Botones -->
+    
+    <div id="botonera">
+        <nav>
+            <ul class="panelBotones">
+            <span class="botones"><a href="../inicio.html"> Inicio </a></span>
+            <span id ="botonact" class="botones"><a href="destinos.html"> Destinos</a> 
+                <ul id ="botonHide">
+                    <li class ="opcionesHide"><a href="europa.html"> Europa</a></li>
+                    <li class ="opcionesHide"><a href="asia.html"> Asia</a></li>
+                </ul>
+			</span>
+            <span class="botones"><a href="multimedia.html"> Multimedia</a></span>
+            <span class="botones"><a href="opinion.html"> Opinion</a></span>
+            <span class="botones"><a href="contacto.html"> Contacto</a></span>
+            <span class="tabActual"><a href="alta.html"> Alta </a></span>
+            <span class="botones"><a href="reservar.html"> Reservas </a></span>
+            </ul>
+        </nav>
+    </div>
+
+    
+        <!-- columna izquierda -->
+        
+    <div id="coli">
+    </div>
+        
+        <!-- Columna central -->
+        
+    <section id="colc">
+        <h1 class="texto"> DATE DE ALTA</h1>
+        <p> Rellena el siguiente formulario para darte de alta en nuestra web. Los campos cuyos bordes están formados por líneas discontínuas son obligatorios</p>
+        <form id="formcon" method="post" action="http://www.formular-chef.com/Formular-Chef.cgi">
+        <input type="hidden" name="recipient" value="jpenuelaberenguer@gmail.com" />
+            <div>
+            <ul>
+                <li>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" autofocus/>
+                </li>
+                <li>
+                    <label for="user"> Usuario: </label>
+                    <input type="text" class="obligatorio" id="user" name="user"/>
+                </li>
+                <li>
+                    <label for="password"> Password: </label>
+                    <input type="password" id="password" name="password"/>
+                </li>
+                <li>
+                    <label for="numero"> Indica un número: </label>
+                    <input type="text" class="obligatorio" id="numero" name="numero"/>
+                </li>
+                <li>
+                    <label for="telefono"> Teléfono de contacto </label>
+                    <input type="tel" class="obligatorio" id="telefono" name="telefono"/>
+                </li>
+                <li>
+                    <label for="correo"> E-mail: </label>
+                    <input type="text" class="obligatorio"  id="correo" name="correo"/>
+                </li>
+                <li>
+                    <label for="subir">Puedes adjuntar una imagen para que sea tu avatar al conectarte a la web (El tamaño máximo es de 400Kb)</label><br/>
+                    <input type="file" id="subir" name="subir" /> <br/>
+                </li>
+                <li>
+                    <label for="paises">¿Has visitado otros países?</label> <br/>
+                        <input type="checkbox" id="paises" name="paises" value="no"/> Si <br/>
+                        <input type="checkbox" name="paises" value="no" /> No <br/>
+                </li>
+                <li id="ocultar">
+                    <label for="respuesta"> ¿Cuales has visitado? </label>
+                    <input type="text" id="respuesta" name="respuesta"/>
+                </li>
+            </ul>
+            
+            <p> Escribe cualquier opinión o sugerencia que desees</p>
+                <textarea id="area" name="area" cols="50" rows="8" wrap="hard"> </textarea>
+                <label for="vaciarText"> </label>
+                <input type="reset" id="vaciarText" value="Vaciar TextArea"/>
+            <p id="contarCaracteres"> El máximo de caractéres es 1.000, de momento llevas 0</p>
+            <br />
+            
+            <div id="centbotones">
+                <label for="vaciar"> </label>
+                <input type="reset" id="vaciar" value="Vaciar Formulario" />
+                <label for="env"> </label>
+                <input type="submit" id="env" value="Enviar" />
+            </div>
+            </div>
+        </form>
+        <p class="agradecer"><strong>¡Gracias por confiar en Viajes Divertimento!</strong></p>
+    </section>
+        
+        <!-- Columna derecha -->
+        
+    <div id="cold">
+        <img class="brujula" src="../imagenes/brujula.png" alt="brujula"/>
+    </div>
+        
+        <!-- Pie -->
+        
+    <footer id="pie">
+        <p id ="hora"></p>
+        <p class="legal"> <small>® 2010-2019, Viajes Divertimento S.L. Todos los derechos reservados</small></p>
+    </footer>
+    
+</div>
+</body> 
+</html>

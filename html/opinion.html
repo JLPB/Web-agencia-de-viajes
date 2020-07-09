@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+   
+ <html lang="es">
+ 
+ <head>
+    <title> Viajes Divertimento - Opinión </title>                                              
+    <meta charset="UTF-8"/>
+    <meta name="autor" content="José Luis Peñuela Berenguer" />
+    <meta name="robots" content="nofollo, noimageindex" />
+    <meta name="keywords" content="daw, css" />                                 
+    <meta name="description" content=" Proyecto asignatura lenguaje de marcas"/>
+    <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href ="../css/opinion.css"/>
+    <link rel="icon" href="../imagenes/favi.png"/>
+    <script src="../javascript/general.js"/></script>
+    <script src="../javascript/basico.js"/></script>
+ </head>
+ 
+ <body>
+ <div id="wrapper">
+        
+        <!-- Cabecera -->
+        
+    <header id="cabecera">
+        <h1 class="textcabecentro"> VIAJES DIVERTIMENTO</h1>
+        <img class="logoi" src="../imagenes/monumentos.png" alt="monumentos"/>
+        <img class="logod" src="../imagenes/mapa.png" alt="mapa"/>
+    </header>
+   
+        <!-- Botones -->
+    <div id="botonera">
+        <nav>
+            <ul class="panelBotones">
+            <span class="botones"><a href="../inicio.html"> Inicio </a></span>
+            <span id ="botonact" class="botones"><a href="destinos.html"> Destinos</a> 
+                <ul id ="botonHide">
+                    <li class ="opcionesHide"><a href="europa.html"> Europa</a></li>
+                    <li class ="opcionesHide"><a href="asia.html"> Asia</a></li>
+                </ul>
+			</span>
+            <span class="botones"><a href="multimedia.html"> Multimedia</a></span>
+            <span class="tabActual"><a href="opinion.html"> Opinion</a></span>
+            <span class="botones"><a href="contacto.html"> Contacto</a></span>
+            <span class="botones"><a href="alta.html"> Alta </a></span>
+            <span class="botones"><a href="reservar.html"> Reservas </a></span>
+            </ul>
+        </nav>
+    </div>
+    
+        <!-- columna izquierda -->
+    
+
+    <div id="coli">
+    </div>
+        
+        <!-- Columna central -->
+        
+    <section id="colc">
+        <h1 class="texto"> AYUDANOS A OFRECERTE UN MEJOR SERVICIO</h1>
+        <div id="cuadrosup">
+            <p> Saber tu opinión es importante para que podamos mejorar los servicios y destinos que ofrecemos, por ello te agradeceríamos que contestaras a las siguientes preguntas.</p> 
+            <p> El tratamiento de la información obtenida será realizado de forma confidencial y anónima. Los resultados obtenidos solo los usaremos para mejorar nuestro servicio. Estos datos no serán cedidos bajo ningùn caso a otra persona o empresa.</p>
+        </div>
+        <form id="formopin" method="post" action="http://www.formular-chef.com/Formular-Chef.cgi" oninput="x.value=parseInt(rango.value)">
+        <input type="hidden" name="recipient" value="jpenuelaberenguer@gmail.com"/><br/>
+            
+            <div>
+            <ul>
+                <li>
+                    <label for="gen"> Indiqua tu género </label> <br/>
+                        <input type="radio" id="gen" name="genero" value="masculino"/> Masculino <br/>
+                        <input type="radio" name="genero" value="femenino"/> Femenino <br/><br/>
+                </li>
+                <li>
+                    <label for="edad">Selecciona tu rango de edad </label>
+                        <select id="edad" name="edad">
+                            <option value="18-30"> Entre 18 y 30 años</option>
+                            <option value="30-45" selected="selected"> Entre 30 y 45 años </option>
+                            <option value="45-60"> Entre 45 y 60 años</option>
+                            <option value="masde60"> Más de 60 años </option>
+                        </select> <br/><br/>
+                </li>
+                <li>
+                    <label for="freq"> A lo largo del año realizo </label>
+                        <input type="number" id="freq" name="frecuencia" min="0" max="365" step="1" /> viajes <br/><br/>
+                </li>
+                <li>
+                    <label for="continente">Indica cúal o cúales de los siguientes continentes has visitado </label> <br/>
+                        <input type="checkbox" id="continente" name="continente" value="europa"/> Europa <br/>
+                        <input type="checkbox" name="continente" value="asia" /> Asia <br/>
+                        <input type="checkbox" name="continente" value="oceania" /> Oceanía <br/>
+                        <input type="checkbox" name="continente" value ="africa" /> África <br/>
+                        <input type="checkbox" name="continente" value ="americasur" /> América del sur <br/>
+                        <input type="checkbox" name="continente" value ="americanorte" /> Ámérica del norte <br/><br/>
+                </li>
+                <li>
+                    <label for="prefe">¿Qué es lo que buscas en tus viajes? </label> <br/>
+                        <input type="checkbox" id="prefe" name="preferencias" value="tranquilidad"/> Tranquilidad  <br/>
+                        <input type="checkbox" name="preferencias" value="nuevasculturas" /> Nuevas culturas <br/>
+                        <input type="checkbox" name="preferencias" value="naturaleza" /> Naturaleza <br/>
+                        <input type="checkbox" name="preferencias" value ="urbes" /> Grandes urbes <br/>
+                        <input type="checkbox" name="preferencias" value ="exclusividad" /> Exclusividad  <br/>
+                        <input type="checkbox" name="preferencias" value ="ofertacultural" /> Oferta cultural variada<br/>
+                        <input type="checkbox" name="preferencias" value ="ofertacultural" /> Nada en concreto, quiero que el destino me sorprenda<br/><br/>
+                </li>
+                <li>
+                    <label for="rango"> Si ya has viajado con nosotros indica el grado de satisfacción obtenido por parte de nuestro servicio</label> <br />
+                        0 <input type="range" min="0" max="10" id="rango" name="rango" value="5"/> 10
+                        <br />
+                        <output name="x" for="a"></output>
+                </li>
+                
+                <li>
+                    <label for="fecha"> Indica la fecha en la que realizaste tu último viaje </label>
+                    <input type="date" id="fecha" name="fecha" />
+                </li>
+            </ul> <br />
+                
+                <label class="subir" for="subir"> En el caso de que quieras compartir alguna foto de tu viaje puedes enviárnosla pulsado en el siguiente botón</label><br/>
+                <input type="file" id="subir" name="subir" /> <br/>
+                
+                <p> Escribe cualquier opinión o sugerencia que desees</p>
+                <textarea id="area" name="area" cols="50" rows="8" wrap="hard"> </textarea>
+                <br/> <br/>
+               
+                <label for="vaciar"> </label>
+                <input type="reset" id="vaciar" name="reset" value="Vaciar formulario" />
+                
+                <label for="env"> </label>
+                <input type="submit" id="env" name="enviar" value="Enviar formulario"/>
+                
+            </div>
+        </form>
+    </section>
+
+        <!-- Columna derecha -->
+    
+    <div id="cold">
+        <img class="brujula" src="../imagenes/brujula.png" alt="brujula"/>
+    </div>
+     
+        <!-- Pie -->
+
+    <footer id="pie">
+        <p id ="hora"></p>
+        <p class="legal"> <small>® 2010-2019, Viajes Divertimento S.L. Todos los derechos reservados</small></p>
+    </footer>
+    
+</div>
+</body>
+ </html>
